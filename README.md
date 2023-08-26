@@ -6,8 +6,8 @@ Learn GraphQL
 ### run project
 * `npm install`
 * `npm run dev`
-* go to url `http://localhost:4000/graphql` to run your query.
-* you can use this data `
+* Go to url `http://localhost:4000/graphql` to run your query.
+* You can use this data `
   query {
   hello
   welcomeMessage(name: "moemen", dayOfWeek: "Sunday"),
@@ -28,7 +28,7 @@ Learn GraphQL
   }` and put here `http://localhost:4000/graphql` and run query.
 
 ## Example From Postman request
-![Example](./example from postman.png?raw=true "Example From Postman request")
+![Example](https://raw.githubusercontent.com/Moemen-Gaballah/Learn-GraphQL/main/example%20from%20postman.png)
 
-## image example query for read data from GraphQl instead of many endpoint
-![Example](./example query read data from GraphQl instead of many endpoint.png?raw=true "image example query for read data from GraphQl instead of many endpoint")
+## Example query for reading data from GraphQl instead of many endpoints
+![Example](https://raw.githubusercontent.com/Moemen-Gaballah/Learn-GraphQL/main/example%20query%20read%20data%20from%20GraphQl%20instead%20of%20many%20endpoint.png)
