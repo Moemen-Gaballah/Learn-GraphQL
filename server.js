@@ -1,13 +1,19 @@
 const express = require('express');
 const {buildSchema} = require('graphql');
 const {graphqlHTTP} = require('express-graphql');
-
+const axios = require('axios');
 const app = express();
-
 
 
 // ! => meaning is required.
 const schema = buildSchema(`
+    type Post {
+        userId: Int
+        id: Int
+        title: String
+        body: String
+    }
+
     type User {
         id: String
         name: String
@@ -15,12 +21,12 @@ const schema = buildSchema(`
         college: String
     }
 
-
     type Query {
         hello: String
         welcomeMessage(name: String, dayOfWeek: String!): String
         getUser: User
         getUsers: [User]
+        getPostsFromExternalAPI: [Post]
     }
 `);
 
@@ -53,12 +59,12 @@ const root = {
             name: "Moemen Gaballa",
             age: 26,
             college: "menofia, Egypt"
-        },{
+        }, {
             id: "UUID-0002",
             name: "Eslam",
             age: 30,
             college: "menofia, Egypt"
-        },{
+        }, {
             id: "UUID-0003",
             name: "Ahmed",
             age: 35,
@@ -66,6 +72,11 @@ const root = {
         },];
 
         return users;
+    },
+    getPostsFromExternalAPI: async () => {
+        const result =  await axios.get(`https://jsonplaceholder.typicode.com/posts`);
+
+        return result.data;
     }
 };
 

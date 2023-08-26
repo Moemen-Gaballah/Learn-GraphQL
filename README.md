@@ -20,5 +20,9 @@ Learn GraphQL
   getUsers {
   name,
   college
-  },
+  },  
+  getPostsFromExternalAPI {
+  id
+  title
+  }
   }` and put here `http://localhost:4000/graphql` and run query.
