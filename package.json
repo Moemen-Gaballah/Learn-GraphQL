@@ -1,0 +1,31 @@
+{
+  "name": "learn-graphql",
+  "version": "1.0.0",
+  "description": "Learn GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moemen-Gaballah/Learn-GraphQL.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "tutorial"
+  ],
+  "author": "moemen gaballa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moemen-Gaballah/Learn-GraphQL/issues"
+  },
+  "homepage": "https://github.com/Moemen-Gaballah/Learn-GraphQL#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.8.0",
+    "nodemon": "^3.0.1"
+  }
+}
