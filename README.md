@@ -27,5 +27,8 @@ Learn GraphQL
   }
   }` and put here `http://localhost:4000/graphql` and run query.
 
+## Example From Postman request
+![Example](./example from postman.png?raw=true "Example From Postman request")
+
 ## image example query for read data from GraphQl instead of many endpoint
 ![Example](./example query read data from GraphQl instead of many endpoint.png?raw=true "image example query for read data from GraphQl instead of many endpoint")
