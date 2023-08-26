@@ -26,3 +26,6 @@ Learn GraphQL
   title
   }
   }` and put here `http://localhost:4000/graphql` and run query.
+
+## image example query for read data from GraphQl instead of many endpoint
+![Example](./example query read data from GraphQl instead of many endpoint.png?raw=true "image example query for read data from GraphQl instead of many endpoint")
